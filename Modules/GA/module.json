@@ -1,0 +1,11 @@
+{
+    "name": "GA",
+    "alias": "ga",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\GA\\app\\Providers\\GAServiceProvider"
+    ],
+    "files": []
+}
