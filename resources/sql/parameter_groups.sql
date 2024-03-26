@@ -1,0 +1,15 @@
+INSERT IGNORE INTO `parameter_groups` (`id`, `code`, `order`, `created_by`, `updated_by`, `deleted_by`, `created_at`, `updated_at`) VALUES
+(1, 'identificacao_ispm', 0, 1, 1, NULL, '2019-06-24 12:38:30', '2023-10-03 08:33:28'),
+(2, 'dados_pessoais', 2, 1, 1, NULL, '2019-06-24 12:40:14', '2023-10-03 08:34:06'),
+(3, 'documentos_pessoais', 3, 1, 1, NULL, '2019-06-24 12:41:06', '2023-10-03 08:34:39'),
+(4, 'caracteristicas_fisicas', 9, 1, 1, NULL, '2019-06-24 12:42:32', '2023-09-19 08:52:53'),
+(5, 'residencias', 8, 1, 1, NULL, '2019-06-24 12:43:14', '2023-10-03 08:36:31'),
+(6, 'contactos', 5, 1, 1, NULL, '2019-06-24 12:43:52', '2023-10-03 08:36:11'),
+(7, 'percurso_academico', 7, 1, 1, NULL, '2019-06-24 12:45:01', '2023-10-03 08:36:39'),
+(8, 'situacao_contratual', 10, 1, 1, NULL, '2019-06-24 12:46:10', '2023-08-03 22:35:17'),
+(9, 'salarios_honorarios', 11, 1, 1, NULL, '2019-06-24 12:46:56', '2023-08-03 22:35:17'),
+(10, 'assinaturas', 12, 1, 1, NULL, '2020-01-11 10:36:03', '2023-09-14 08:04:49'),
+(11, 'identificacao_ispm_candidato', 1, 1, 1, NULL, '2021-08-04 13:05:43', '2024-01-30 11:51:03'),
+(12, 'percurso_academico_candidato', 6, 1, 1, NULL, '2021-08-04 13:26:38', '2023-08-08 11:53:38'),
+(13, 'documentos_pessoais_candidato', 2, 1, 1, NULL, '2021-08-04 20:16:08', '2023-08-08 11:49:11'),
+(14, 'morada', 4, 1, 1, NULL, '2023-08-07 06:20:10', '2023-10-03 08:35:58');

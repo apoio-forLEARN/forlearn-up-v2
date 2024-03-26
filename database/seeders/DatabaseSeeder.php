@@ -14,7 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        collect(["permissions", "roles", "languages"])->each(function($filename){
+        collect([
+            "permissions",
+            "roles",
+            "languages",
+            "parameters",
+            "parameter_translations",
+            "parameter_groups",
+            "parameter_group_translations",
+            "parameter_options"
+        ])->each(function($filename){
             $file_path = resource_path("sql/{$filename}.sql");
             DB::unprepared(file_get_contents($file_path));
         });
