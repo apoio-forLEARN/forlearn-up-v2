@@ -72,11 +72,16 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    public const TABLE = "users";
+
     protected $fillable = [
         'name',
         'email',
         'password',
     ];
+
+    protected $table = User::TABLE;
 
     /**
      * The attributes that should be hidden for serialization.

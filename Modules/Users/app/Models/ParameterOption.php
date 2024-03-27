@@ -2,6 +2,7 @@
 
 namespace Modules\Users\app\Models;
 
+use App\Helpers\LanguageHelper;
 use App\Models\CommonModel;
 use App\Util\CommonFields;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -67,4 +68,20 @@ class ParameterOption extends CommonModel
         ParameterOption::PARAMETER_ID, ParameterOption::CODE, ParameterOption::HAS_RELATED_PARAMETERS
     ];
 
+    protected $table = ParameterOption::TABLE;
+
+    public function translations()
+    {
+        return $this->hasMany(ParameterOptionTranslation::class, ParameterOptionTranslation::PARAMETER_OPTION_ID, CommonFields::ID);
+    }
+
+    public function translation()
+    {
+        return $this->hasOne(ParameterOptionTranslation::class, ParameterOptionTranslation::PARAMETER_OPTION_ID, CommonFields::ID);
+    }
+
+    public function currentTranslation()
+    {
+        return $this->translation()->whereActive(true)->whereLanguageId(LanguageHelper::getCurrentLanguage());
+    }
 }

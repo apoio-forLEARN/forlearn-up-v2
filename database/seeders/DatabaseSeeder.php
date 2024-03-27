@@ -22,7 +22,12 @@ class DatabaseSeeder extends Seeder
             "parameter_translations",
             "parameter_groups",
             "parameter_group_translations",
-            "parameter_options"
+            "parameter_has_parameter_groups",
+            "parameter_options",
+            "parameter_option_translations",
+            "role_translations",
+            "users_forlearn", // forlearn-dev
+            "user_parameters_forlean"
         ])->each(function($filename){
             $file_path = resource_path("sql/{$filename}.sql");
             DB::unprepared(file_get_contents($file_path));
