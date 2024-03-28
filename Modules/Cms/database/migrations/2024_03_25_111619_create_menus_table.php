@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create(Menu::TABLE, function (Blueprint $table) {
             CommonFields::primary($table);
 			$table->string(Menu::CODE)->unique();
+            $table->string(Menu::GRID)->nullable()->default('grid-1');
 			$table->integer(Menu::ORDER)->nullable()->default(0);
             CommonFields::bottom($table);
         });

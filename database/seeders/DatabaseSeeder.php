@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run(): void
-    {
+    {   // forlearn-dev
         collect([
             "permissions",
             "roles",
@@ -26,8 +26,15 @@ class DatabaseSeeder extends Seeder
             "parameter_options",
             "parameter_option_translations",
             "role_translations",
-            "users_forlearn", // forlearn-dev
-            "user_parameters_forlean"
+            "users_forlearn",
+            "user_parameters_forlean",
+            "model_has_roles_forlearn",
+            "model_has_permissions_forlearn",
+            "role_has_permissions",
+            "menus",
+            "menu_translations",
+            "menu_items",
+            "menu_item_translations"
         ])->each(function($filename){
             $file_path = resource_path("sql/{$filename}.sql");
             DB::unprepared(file_get_contents($file_path));

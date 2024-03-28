@@ -54,6 +54,7 @@ class Menu extends Model
     public const TABLE = "menus";
     public const CODE = "code";
     public const ORDER = "order";
+    public const GRID = "grid";
 
     /**
      * The attributes that are mass assignable.
@@ -61,7 +62,7 @@ class Menu extends Model
     protected $fillable = [
         CommonFields::ID, CommonFields::CREATED_BY, CommonFields::UPDATED_BY, CommonFields::DELETED_BY,
 
-        Menu::CODE, Menu::ORDER
+        Menu::CODE, Menu::ORDER, MENU::GRID
     ];
 
     protected $table = Menu::TABLE;

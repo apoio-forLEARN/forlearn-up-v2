@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');*/
 
 :root{
   --bg-navbar: rgba(2, 48,71, 1);
@@ -105,7 +105,7 @@ body{
 }
 
 #option-choose ul,#option-bell ul {
-    font-size: 10pt; 
+    font-size: 10pt;
 }
 
 #option-choose ul li a,#option-bell ul li a{
@@ -115,10 +115,11 @@ body{
 .navegation-container .navegation-header .navegation-option #option-bell .nav-bill .bg-bell{
   font-size: 7pt;
   background: var(--menu-active);
-  padding: 0.2rem;
+  padding: 0.5rem;
   border-radius: 50%;
   height: 10px;
   width: max-content;
+  margin-left: -0.4rem;
 }
 
 .navegation-container .navegation-header .navegation-option #option-bell .nav-bill .bell-signal{
@@ -151,7 +152,7 @@ body{
   flex-wrap: wrap;
   list-style: none;
   align-items: center;
-  margin: -1px; 
+  margin: -1px;
   padding: 0;
 }
 
@@ -199,14 +200,14 @@ body{
 }
 
 .navegation-header .menu-item.perm .dropdown-submenu{
-  margin: 0.1rem;  
+  margin: 0.1rem;
   margin-top: 0.835rem !important;
 }
 
 .navegation-menu .menu-item .dropdown-submenu{
   display: grid;
   grid-template-columns: auto;
-  gap: 1rem; 
+  gap: 1rem;
   padding: 1rem;
 }
 

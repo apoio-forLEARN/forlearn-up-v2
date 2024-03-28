@@ -1,4 +1,4 @@
-INSERT INTO `user_parameters` (`id`, `parameter_group_id`, `users_id`, `parameters_id`, `value`, `description`, `is_duplicate`, `created_by`, `updated_by`, `deleted_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
+INSERT IGNORE INTO `user_parameters` (`id`, `parameter_group_id`, `users_id`, `parameters_id`, `value`, `description`, `is_duplicate`, `created_by`, `updated_by`, `deleted_by`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, 1, 25, '1_file_25_craft.png', NULL, 0, 1, NULL, NULL, '2020-01-21 12:40:09', '2020-01-21 12:40:09', NULL),
 (2, 1, 1, 19, 'FFFFF', NULL, 0, 1, NULL, NULL, '2020-01-21 12:40:09', '2020-01-21 12:40:09', NULL),
 (3, 2, 1, 1, 'Super Administrador', NULL, 0, 1, NULL, NULL, '2020-01-21 12:40:09', '2020-01-21 12:40:09', NULL),

@@ -20,7 +20,7 @@ class CommonFields{
     $table->integer(static::CREATED_BY)->unsigned()->nullable()->default(1);
     $table->integer(static::UPDATED_BY)->unsigned()->nullable()->default(1);
     $table->integer(static::DELETED_BY)->unsigned()->nullable();
-    $table->integer(static::DELETED_AT)->unsigned()->nullable();
+    $table->date(static::DELETED_AT)->unsigned()->nullable();
     $table->timestamps();
   }
 

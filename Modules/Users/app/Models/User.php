@@ -3,6 +3,8 @@
 namespace Modules\Users\app\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use App\Util\CommonFields;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -105,4 +107,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+
+    public function notification_received(){
+        return relationships($this->hasMany(Notification::class,Notification::SENT_TO, CommonFields::ID))->orderBy(CommonFields::ID,'DESC');
+    }
+
+    public function notification_sent(){
+        return relationships($this->hasMany(Notification::class,Notification::SENT_BY, CommonFields::ID))->orderBy(CommonFields::ID,'DESC');
+    }
+
 }
